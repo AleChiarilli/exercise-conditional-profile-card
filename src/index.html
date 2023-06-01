@@ -3,13 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
-      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+    <title>Conditional Profile Card</title>
+    <script
+      src="https://kit.fontawesome.com/da1f80cd9f.js"
       crossorigin="anonymous"
-    />
+    ></script>
     <link rel="shortcut icon" href="./assets/img/4geeks.ico" />
   </head>
 
@@ -40,24 +38,39 @@
       </li>
       <li>
         <label>Twitter</label>
-        <input class="picker" for="twitter" type="text" />
+        <input
+          class="picker"
+          for="twitter"
+          type="text"
+          placeholder="link SNS"
+        />
       </li>
       <li>
         <label>Github</label>
-        <input class="picker" for="github" type="text" />
+        <input class="picker" for="github" type="text" placeholder="link SNS" />
       </li>
       <li>
         <label>LinkedIn</label>
-        <input class="picker" for="linkedin" type="text" />
+        <input
+          class="picker"
+          for="linkedin"
+          type="text"
+          placeholder="link SNS"
+        />
       </li>
       <li>
         <label>Instagram</label>
-        <input class="picker" for="instagram" type="text" />
+        <input
+          class="picker"
+          for="instagram"
+          type="text"
+          placeholder="link SNS"
+        />
       </li>
       <li>
         <label>Role</label>
         <select class="picker" for="role">
-          <option value="">null</option>
+          <option value="">Pick Role</option>
           <option value="Web Developer">Web Developer</option>
           <option value="Floor Planner">Floor Planner</option>
           <option value="Technical Writter">Technical Writter</option>
@@ -66,7 +79,7 @@
       <li>
         <label>City</label>
         <select class="picker" for="city">
-          <option value="">null</option>
+          <option value="">Pick city</option>
           <option value="Miami">Miami</option>
           <option value="Munich">Munich</option>
           <option value="Caracas">Caracas</option>
@@ -76,12 +89,20 @@
       <li>
         <label>Country</label>
         <select class="picker" for="country">
-          <option value="">null</option>
+          <option value="">Pick country</option>
           <option value="USA">USA</option>
           <option value="Germany">Germany</option>
           <option value="Canada">Canada</option>
           <option value="Venezuela">Venezuela</option>
         </select>
+      </li>
+      <li>
+        <label>Avatar</label>
+        <input class="picker" for="avatarURL" type="url" placeholder="URL" />
+      </li>
+      <li>
+        <label>Background</label>
+        <input class="picker" for="background" type="url" placeholder="URL" />
       </li>
     </ul>
     <div id="widget_content"></div>
